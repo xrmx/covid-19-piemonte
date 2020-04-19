@@ -85,4 +85,5 @@ I programmi sopra illustrati leggono e scrivono file nella sottocartella data
 
 I programmi sono disponibili secondo i criteri della licenza MIT
 
-I dati originali sono forniti dalla Regione Piemonte e pubblicati come dati aperti sul sito istituzionale dell'ente. Qualora la Regione Piemonte ritenesse che la pubblicazione di questi dati in formato aperto costituisse una violazione di qualche Copyright detenuto dall'ente stesso, i dati verranno rimossi da questo repository su richiesta del detentore di tali diritti.
+I dati originali sono forniti dalla Regione Piemonte e da altri enti pubblici piemontesi e pubblicati sui rispettivi siti istituzionali.
+Qualora la Regione Piemonte o un altro ente ritenga che la pubblicazione di questi dati in formato aperto costituisca una violazione di qualche Copyright detenuto dall'ente stesso, i dati verranno rimossi da questo repository su richiesta del detentore di tali diritti.
