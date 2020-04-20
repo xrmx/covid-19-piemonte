@@ -22,9 +22,9 @@ import sys
 import time
 import requests
 from pathlib import Path
-# from selenium import webdriver
+from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
-import chrome_extensions
+# import chrome_extensions
 
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
       "Chrome/39.0.2171.95 Safari/537.36")
@@ -119,8 +119,8 @@ def main():
     options = {}
     # comment / uncomment following lines to select and run selenium driver
     # driver = webdriver.Firefox(chrome_options=options)
-    # driver = webdriver.Chrome(chrome_options=options)
-    driver = chrome_extensions.start_chrome_flexible(options)
+    driver = webdriver.Chrome(chrome_options=options)
+    # driver = chrome_extensions.start_chrome_flexible(options)
     driver.implicitly_wait(10)
 
 # navigate
