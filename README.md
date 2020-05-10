@@ -44,8 +44,8 @@ La tabella seguente elenca le colonne del file con la loro descrizione
 |--------------------------|-------------|
 | Ente | Nome comune, ASL, provincia, regione |
 | Tipo	 | Tipo ente, ASL o COM o PRO o REG |
-| Provincia	 | Provincia, non siginificativo per ASL |
-| ASL	 | ASL, non siginificativo per provinca e regione |
+| Provincia	 | Provincia, non significativo per ASL |
+| ASL	 | ASL, non significativo per provincia e regione |
 | Codice ISTAT	 | codice ISTAT o codice azienda ASL (*) |
 | Abitanti	 | numero abitanti |
 | Positivi	 | numero positivi al Covid-19 |
