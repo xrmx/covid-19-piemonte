@@ -25,7 +25,7 @@ scarica_dati_da_regione_piemonte.py
 
 utilizza il pacchetto Selenium per richiedere la pagina contenente la mappa al sito della Regione Piemonte come un qualsiasi web browser e per accedere alla struttura javascript che conserva i dati dei positivi per comune. Questi dati sono salvati in un file csv nella sottocartella data.
 
-## aggregazione di tutti i dati in unico file
+## Aggregazione di tutti i dati in unico file
 A partire dal giorno 10 maggio 2020 è caricato nella cartella data un file in formato CSV con nome
 
 con tutti i dati disponibili dal 25 marzo 2020 fino alla data indicata nel nome del file.
@@ -34,7 +34,7 @@ Sono inoltre presenti i dati aggregati per provincia, intera regione e ASL.
 
 Mancano i dati del 10 e 11 aprile 2020.
 
-La tabella sequente elenca le colonne del file con la loro descrizione
+La tabella seguente elenca le colonne del file con la loro descrizione
 &nbsp;
 
 &nbsp;
