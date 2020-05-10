@@ -24,10 +24,13 @@ La tabella sequenza elenca le colonne del file con la loro descrizione
 | Tipo	 | Tipo ente, ASL o COM o PRO o REG |
 | Provincia	 | Provincia, non siginificativo per ASL |
 | ASL	 | ASL, non siginificativo per provinca e regione |
-| Codice ISTAT	 | codice ISTAT o codice ASL |
+| Codice ISTAT	 | codice ISTAT o codice azienda ASL (*) |
 | Abitanti	 | numero abitanti |
 | Positivi	 | numero positivi al Covid-19 |
 | Positivi 1000 abitanti	 | numero positivi al Covid-19 per 1000 abitanti |
 | Delta positivi	 | differenza positivi rispetto al giorno precedente |
 | Delta positivi 1000 abitanti	 | differenza positivi per 1000 abitanti rispetto al giorno precedente |
 | Data | data in formato aaaa/mm/gg |
+
+(*) Per evitare possibili collisioni tra i codici ISTAT di comuni, province e regione e i codici azienda della ASL, 
+a questi ultimi è stato aggiunto il prefisso 'A'
