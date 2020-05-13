@@ -41,7 +41,7 @@ def main():
     # il primo file ha anche le informazione sul numero abitanti per comune
     print(ifiles[0])
     df = pd.read_csv(ifiles[0], sep=";",
-                     dtype={"Codice ISTAT": "string"})
+                     dtype={"Codice ISTAT": "str"})
     popolazione = df[['Abitanti', 'Codice ISTAT']] \
         .drop_duplicates(keep='first')
 
@@ -49,7 +49,7 @@ def main():
     for ifile in ifiles[1:]:
         print(ifile)
         df1 = pd.read_csv(ifile, sep=";",
-                          dtype={"Codice ISTAT": "string"})
+                          dtype={"Codice ISTAT": "str"})
         df = pd.concat([df, df1], axis=0)
         del df1
 

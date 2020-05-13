@@ -30,7 +30,7 @@ def main():
 
     # crea il dataframe a partire dal file in input
     casi = pd.read_csv(args.positivi_per_comune, sep=";",
-                       dtype={"Codice ISTAT": "string"})
+                       dtype={"Codice ISTAT": "str"})
     fname = Path(args.positivi_per_comune).stem
     fdata = fname.replace("dati_", "") \
                  .replace("_da_regione_piemonte", "")
@@ -38,7 +38,7 @@ def main():
     # relativa al numero di abitanti per ogni comune
     ifile = Path("data") / "dati_2020_04_09_da_regione_piemonte.csv"
     df = pd.read_csv(ifile, sep=";",
-                     dtype={"Codice ISTAT": "string"})
+                     dtype={"Codice ISTAT": "str"})
     popolazione = df[['Abitanti', 'Codice ISTAT']] \
         .drop_duplicates(keep='first')
     # aggiungi la colonna 'Abitanti' al dataset

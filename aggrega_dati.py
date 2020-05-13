@@ -115,8 +115,8 @@ def carica_asl():
     colonne = ['CODICE AZIENDA', 'DENOMINAZIONE AZIENDA', 'CODICE COMUNE']
     ifile = Path("data") / ("asl_piemonte.csv")
     asl = pd.read_csv(ifile, sep=";",
-                      dtype={"CODICE COMUNE": "string",
-                             "CODICE AZIENDA": "string"},
+                      dtype={"CODICE COMUNE": "str",
+                             "CODICE AZIENDA": "str"},
                       usecols=colonne)
     return asl
 
@@ -147,13 +147,13 @@ def carica_dati_da_regione_piemonte():
     # il primo file ha anche le informazione sul numero abitanti per comune
     print(ifiles[0])
     dfall = pd.read_csv(ifiles[0], sep=";",
-                        dtype={"Codice ISTAT": "string"})
+                        dtype={"Codice ISTAT": "str"})
 
     # carica i file con i dati
     for ifile in ifiles[1:]:
         print(ifile)
         df1 = pd.read_csv(ifile, sep=";",
-                          dtype={"Codice ISTAT": "string"})
+                          dtype={"Codice ISTAT": "str"})
         dfall = pd.concat([dfall, df1], axis=0)
         del df1
     print("Numero righe comuni ", dfall.shape[0])
