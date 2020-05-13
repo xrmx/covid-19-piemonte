@@ -19,6 +19,13 @@ COLONNE = ['Ente', 'Tipo', 'Provincia', 'Positivi',
            'Positivi 1000 abitanti',
            'Abitanti', 'Data', 'Codice ISTAT', 'ASL']
 
+DESCRIZIONE_TIPO = {
+    'ASL': 'ASL',
+    'COM': 'comune',
+    'PROV': 'provincia',
+    'REG': 'regione',
+}
+
 
 def provincia(row):
     """
@@ -237,6 +244,12 @@ def main():
     # today = datetime.strftime(datetime.now(), "%Y_%m_%d")
     ofile = Path("data") / ("dati_per_tutto_il_periodo_" + last + ".csv")
     dfall.to_csv(ofile, index=False, sep=";")
+
+    # creiamo un file separato per ogni "Tipo": PROV, REG, ASL, COM
+    for tipo, descrizione in DESCRIZIONE_TIPO.items():
+        dfiltrato = dfall[dfall['Tipo'] == tipo]
+        ofile = Path("data") / ("dati_per_tutto_il_periodo_tipo_" + descrizione + ".csv")
+        dfiltrato.to_csv(ofile, index=False, sep=";")
 
 
 if __name__ == "__main__":
