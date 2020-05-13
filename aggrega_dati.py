@@ -232,10 +232,7 @@ def main():
     # rispetto al giorno Precedente
     dfall = aggiungi_delta_positivi(dfall, prima_data)
 
-    # crea nome file output e scrivi il dataset
-    last = dfall['Data'].max().replace("/", "_")
-    # today = datetime.strftime(datetime.now(), "%Y_%m_%d")
-    ofile = Path("data") / ("dati_per_tutto_il_periodo_" + last + ".csv")
+    ofile = Path("data") / ("dati_per_tutto_il_periodo.csv")
     dfall.to_csv(ofile, index=False, sep=";")
 
 
